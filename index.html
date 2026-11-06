@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20viewBox=%220%200%20100%20100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>" />
+  <title>Welcome to My Website</title>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">✨</span> LaunchPad
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn-icon" aria-label="Toggle theme" title="Toggle dark/light mode">
+          <span id="themeIcon">🌙</span>
+        </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <span class="badge">🚀 Built with Vite</span>
+      <h1 class="hero-title">Build Something Amazing Today</h1>
+      <p class="hero-subtitle">
+        A fast, responsive, and beautiful website powered by Vite. Featuring hot module replacement (HMR), modern CSS styling, and interactive JavaScript components.
+      </p>
+      <div class="hero-buttons">
+        <a href="#features" class="btn btn-primary">Get Started</a>
+        <a href="#about" class="btn btn-secondary">Learn More</a>
+      </div>
+      
+      <!-- Interactive Stat Counter Widget -->
+      <div class="hero-stats">
+        <div class="stat-card">
+          <h3 class="stat-number" data-target="99.9">99.9%</h3>
+          <p class="stat-label">Uptime</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="stat-number" data-target="15000">15,000+</h3>
+          <p class="stat-label">Active Users</p>
+        </div>
+        <div class="stat-card">
+          <h3 class="stat-number" data-target="50">50+</h3>
+          <p class="stat-label">Components</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Key Features</h2>
+        <p class="section-subtitle">Everything you need to launch your next big idea smoothly.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Lightning Fast HMR</h3>
+          <p>Instant server start and lightning fast Hot Module Replacement with Vite.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Fully Responsive</h3>
+          <p>Adapts seamlessly across mobile phones, tablets, laptops, and ultra-wide screens.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌓</div>
+          <h3>Dark Mode Ready</h3>
+          <p>Built-in light and dark themes with persistent preference stored locally.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3>Modern Styling</h3>
+          <p>Polished modern aesthetics using CSS variables for effortless customization.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📦</div>
+          <h3>Optimized Build</h3>
+          <p>Rollup-powered production bundling for high-efficiency asset delivery.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛠️</div>
+          <h3>Modular Code</h3>
+          <p>Clean ES modules architecture that scales easily with any framework or library.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Demo Section -->
+  <section class="demo section">
+    <div class="container">
+      <div class="demo-box">
+        <h2>Interactive Click Counter</h2>
+        <p>Give it a spin! Click below to see JavaScript interactivity in action.</p>
+        <div class="counter-display" id="counterValue">0</div>
+        <div class="counter-controls">
+          <button class="btn btn-secondary" id="decrementBtn">- Decrease</button>
+          <button class="btn btn-secondary" id="resetBtn">Reset</button>
+          <button class="btn btn-primary" id="incrementBtn">+ Increase</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-text">
+        <span class="badge">About This Project</span>
+        <h2>Modern Web Development with Vite</h2>
+        <p>
+          This website is powered by <strong>Vite</strong>, providing an extraordinarily quick development environment with native ES modules and lightning-fast rebuilds.
+        </p>
+        <p>
+          Ready to scale into Vue, React, Svelte, or TypeScript whenever you want, or stay lean with vanilla JavaScript.
+        </p>
+        <ul class="about-list">
+          <li>⚡ Instant server start & HMR</li>
+          <li>🌓 Dynamic Light / Dark mode</li>
+          <li>📱 Mobile-first responsive design</li>
+        </ul>
+      </div>
+      <div class="about-visual">
+        <div class="card-stack">
+          <div class="stack-card card-1">
+            <span class="card-tag">Vite & Rollup</span>
+            <h4>Modern Bundling</h4>
+            <p>Native ES modules in dev, optimized Rollup bundle in production.</p>
+          </div>
+          <div class="stack-card card-2">
+            <span class="card-tag">CSS3</span>
+            <h4>Themed Styling</h4>
+            <p>Flexbox, Grid, and CSS custom properties for instant styling.</p>
+          </div>
+          <div class="stack-card card-3">
+            <span class="card-tag">ESM JavaScript</span>
+            <h4>Dynamic Interactivity</h4>
+            <p>Modular scripts for reactive widgets, theme switching, and forms.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">Have questions or want to collaborate? Send a message!</p>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+        <div class="form-feedback" id="formFeedback"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <span class="logo-icon">✨</span> LaunchPad
+        </a>
+        <p>A modern and lightweight website built with Vite.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <h4>Connect</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="GitHub">🐙</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+          <a href="#" aria-label="LinkedIn">💼</a>
+          <a href="#" aria-label="Email">✉️</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="currentYear"></span> LaunchPad. Powered by Vite.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
